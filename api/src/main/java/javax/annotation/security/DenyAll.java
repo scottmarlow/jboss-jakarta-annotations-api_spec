@@ -15,12 +15,17 @@
  */
 
 package javax.annotation.security;
-import java.lang.annotation.*;
-import static java.lang.annotation.ElementType.*;
-import static java.lang.annotation.RetentionPolicy.*;
+
+import static java.lang.annotation.ElementType.METHOD;
+import static java.lang.annotation.ElementType.TYPE;
+import static java.lang.annotation.RetentionPolicy.RUNTIME;
+
+import java.lang.annotation.Documented;
+import java.lang.annotation.Retention;
+import java.lang.annotation.Target;
 
 /**
- * Specifies that no security roles are allowed to invoke the specified 
+ * Specifies that no security roles are allowed to invoke the specified
  * method(s).
  *
  * @see javax.annotation.security.RolesAllowed
@@ -28,7 +33,7 @@ import static java.lang.annotation.RetentionPolicy.*;
  * @since Common Annotations 1.0
  */
 @Documented
-@Retention (RUNTIME)
+@Retention(RUNTIME)
 @Target({TYPE, METHOD})
 public @interface DenyAll {
 }

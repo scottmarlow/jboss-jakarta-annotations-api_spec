@@ -1,3 +1,13 @@
+JBoss Jakarta Annotations
+==================================
+
+What is this
+-----------------------
+
+This is fork of Jakarta Annotations api project.
+Upstream used: https://github.com/eclipse-ee4j/common-annotations-api/
+
+
 # Jakarta Annotations [![Build Status](https://travis-ci.org/eclipse-ee4j/common-annotations-api.svg?branch=master)](https://travis-ci.org/eclipse-ee4j/common-annotations-api)
 
 **Jakarta Annotations** defines a collection of annotations representing common

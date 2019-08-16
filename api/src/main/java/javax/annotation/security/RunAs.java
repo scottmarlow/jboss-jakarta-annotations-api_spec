@@ -15,20 +15,24 @@
  */
 
 package javax.annotation.security;
-import java.lang.annotation.*;
-import static java.lang.annotation.ElementType.*;
-import static java.lang.annotation.RetentionPolicy.*;
+
+import static java.lang.annotation.ElementType.TYPE;
+import static java.lang.annotation.RetentionPolicy.RUNTIME;
+
+import java.lang.annotation.Documented;
+import java.lang.annotation.Retention;
+import java.lang.annotation.Target;
 
 /**
  * Defines the identity of the application during execution.
- * This allows developers to execute an application under a particular role. 
- * The role must map to the user / group information in the container's 
+ * This allows developers to execute an application under a particular role.
+ * The role must map to the user / group information in the container's
  * security realm. Its value is the name of a security role.
  *
  * @since Common Annotations 1.0
  */
 @Documented
-@Retention (RUNTIME)
+@Retention(RUNTIME)
 @Target(TYPE)
 public @interface RunAs {
     /**

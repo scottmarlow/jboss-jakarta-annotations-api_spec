@@ -16,15 +16,19 @@
 
 package javax.annotation;
 
-import java.lang.annotation.*;
-import static java.lang.annotation.ElementType.*;
-import static java.lang.annotation.RetentionPolicy.*;
+import static java.lang.annotation.ElementType.PARAMETER;
+import static java.lang.annotation.ElementType.TYPE;
+import static java.lang.annotation.RetentionPolicy.RUNTIME;
+
+import java.lang.annotation.Documented;
+import java.lang.annotation.Retention;
+import java.lang.annotation.Target;
 
 /**
- * The <code>Priority</code> annotation can be applied to classes 
- * or parameters to indicate in what order they should be used.  
+ * The <code>Priority</code> annotation can be applied to classes
+ * or parameters to indicate in what order they should be used.
  * The effect of using the <code>Priority</code> annotation in
- * any particular instance is defined by other specifications that 
+ * any particular instance is defined by other specifications that
  * define the use of a specific class.
  * <p>
  * For example, the Interceptors specification defines the use of
@@ -39,7 +43,7 @@ import static java.lang.annotation.RetentionPolicy.*;
  *
  * @since Common Annotations 1.2
  */
-@Target({TYPE,PARAMETER})
+@Target({TYPE, PARAMETER})
 @Retention(RUNTIME)
 @Documented
 public @interface Priority {
