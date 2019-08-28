@@ -54,6 +54,7 @@
         <findbugs.version>3.0.5</findbugs.version>
         <findbugs.exclude>exclude.xml</findbugs.exclude>
         <findbugs.threshold>Low</findbugs.threshold>
+        <maven.deploy.skip>true</maven.deploy.skip>
     </properties>
 
     <modules>
