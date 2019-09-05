@@ -1,5 +1,6 @@
 # Maven noise
 target/
+pom.xml.versionsBackup
 
 # OSX noise
 .DS_Store
